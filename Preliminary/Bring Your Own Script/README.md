@@ -1,4 +1,5 @@
-# Bring Your Own Script
+# Bring Your Own Script 
+> Category: Web
 ## Solution
 
 We are given a website that has multiple directories and the flag should be located in one of them. The script below is designed to visit directories on the website and continue scraping recursively until it finds ```RWSC``` inside the response.
@@ -48,6 +49,8 @@ We didnt get any response that contains ```RWSC```. So, we need to search all th
 <img src="8hss4p.jpg" alt="8hss4p.jpg" style="max-width: 100%;"><img src="8hss31.jpg" alt="8hss31.jpg" style="max-width: 100%;">
 ```
 
+Modify the script a bit to find JPG files.
+
 ```python
             if '.jpg' in response.text:
                 print(f"Found flag at {url}")
@@ -66,3 +69,10 @@ Found flag at https://byos.ctf.rawsec.com/root/%F0%9F%A4%A4%F0%9F%A4%95%F0%9F%98
 ```
 
 We finally found the flag in https://byos.ctf.rawsec.com/root/%F0%9F%A4%A4%F0%9F%A4%95%F0%9F%98%83/%F0%9F%98%94%F0%9F%98%81%F0%9F%98%95%F0%9F%98%B5/%F0%9F%98%BA%F0%9F%98%AA%F0%9F%A5%B4%F0%9F%98%87/%F0%9F%A5%B0%F0%9F%A5%B6%F0%9F%A4%A3%F0%9F%98%82/%F0%9F%A4%A7%F0%9F%98%85/index.php
+
+
+![alt text](images/8hss4p.jpg) 
+![alt text](images/8hss31.jpg) 
+
+## Flag
+The flag for this challenge is ```RWSC{J4CKP0T}```
