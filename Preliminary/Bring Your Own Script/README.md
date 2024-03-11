@@ -1,5 +1,9 @@
 # Bring Your Own Script 
 > Category: Web
+>
+> TLDR:
+>
+> Use BeautifulSoup to do web scraping and directory traversing, check every response and search for JPG file containing flag
 ## Solution
 
 We are given a website that has multiple directories and the flag should be located in one of them. The script below is designed to visit directories on the website and continue scraping recursively until it finds ```RWSC``` inside the response.
